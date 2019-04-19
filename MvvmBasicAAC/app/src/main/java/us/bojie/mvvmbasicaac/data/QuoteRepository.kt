@@ -6,7 +6,7 @@ class QuoteRepository private constructor(private val quoteDao: FakeQuoteDao) {
         quoteDao.addQuote(quote)
     }
 
-    fun getQuote() = quoteDao.getQuotes()
+    fun getQuotes() = quoteDao.getQuotes()
 
     companion object {
         // @Volatile - Writes to this property are immediately visible to other threads
